@@ -4,6 +4,7 @@ Created on Thu Jun  8 15:14:11 2017
 
 @author: richard
 """
+from future.utils import iteritems
 from xml.sax import ContentHandler
 from defusedxml.sax import parse
 from namedlist import namedlist, FACTORY, NO_DEFAULT
@@ -52,10 +53,11 @@ class ExcelHandler(ContentHandler):
         self.start_methods = get_tag_methods(methods, '_start')
         self.end_methods = get_tag_methods(methods, '_end')
 
-        self.start_methods.update(('ss:{}'.format(m), f)
-                                  for m, f in self.start_methods.items())
-        self.end_methods.update(('ss:{}'.format(m), f)
-                                for m, f in self.end_methods.items())
+        self.start_methods.update(self.__format_method(self.start_methods))
+        self.end_methods.update(self.__format_method(self.end_methods))
+
+    def __format_method(self, methods):
+        return dict(('ss:{}'.format(m), f) for m, f in iteritems(methods))
 
     def characters(self, content):
         if self.data:
