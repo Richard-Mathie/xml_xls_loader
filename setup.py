@@ -15,7 +15,7 @@ with open('README.rst') as f:
 requirements = parse_requirements('requirements.txt', session=False)
 requirements = [str(ir.req) for ir in requirements]
 
-__NAME__ = 'Flask-Cache-Redis-Cluster'
+__NAME__ = 'xml_xls_loader'
 __doc__ = readme
 __author__ = 'Richard-Mathie'
 __license__ = 'BSD'
@@ -24,23 +24,24 @@ setup(
     name=__NAME__,
     version=version,
     license=__license__,
-    description='Adds redis cluster caching support to the Flask Cache(ing) extension',
+    description='Module to load a MS xml xls into a pandas DataFrame',
     long_description=__doc__,
     author=__author__,
     author_email='richard.mathie@cantab.net',
     url='/'.join(['https://github.com', __author__, __NAME__]),
-    packages=['flask_cache_redis_cluster'],
+    packages=['xml_xls_loader'],
     platforms='any',
     install_requires=requirements,
     test_suite='tests',
     classifiers=[
-        'Environment :: Web Environment',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'Environment :: Console',
+        'Operating System :: OS Independent',
+        'Intended Audience :: Science/Research',
+        'Topic :: Scientific/Engineering',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7'
     ]
 )

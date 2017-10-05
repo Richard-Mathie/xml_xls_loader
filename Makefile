@@ -21,7 +21,7 @@ cleancov:
 	-coverage erase
 
 cleanmeta:
-	-rm -rf _.egg-info/
+	-rm -rf xml_xls_loader.egg-info/
 
 cleanall: clean cleancov cleanmeta
 	-find . -type f -name "*~" -exec rm -f "{}" \;
@@ -35,10 +35,9 @@ dist: cleanmeta
 	-python setup.py sdist bdist_wheel
 
 package: dist
-	-twine upload dist/_-"$(cat Version)".tar.gz
+	-twine upload dist/xml_xls_loader-"$(cat Version)".tar.gz
 
 travis-run:
-
 	# Run tests
-	nosetests -v --with-coverage --cover-tests --cover-package=_
+	nosetests -v --with-coverage --cover-tests --cover-package=xml_xls_loader
 

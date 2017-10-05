@@ -1,9 +1,9 @@
 # xml_xls_loader
-Python Module to load a MS xml xls into a pandas DataFrame
-[![PyPI version](https://img.shields.io/pypi/v/_.svg)](https://pypi.python.org/pypi/_)
-[![Travis CI](https://travis-ci.org/Richard-Mathie/_.svg?branch=master)](https://travis-ci.org/_/_)
-[![Code Climate](https://codeclimate.com/repos/_/badges/_/gpa.svg)](https://codeclimate.com/repos/_/feed)
-[![Test Coverage](https://codeclimate.com/repos/_/badges/_/coverage.svg)](https://codeclimate.com/repos/_/coverage)
+Python module to load a MS xml xls into a pandas DataFrame
+[![PyPI version](https://img.shields.io/pypi/v/xml_xls_loader.svg)](https://pypi.python.org/pypi/xml_xls_loader)
+[![Travis CI](https://travis-ci.org/Richard-Mathie/xml_xls_loader.svg?branch=master)](https://travis-ci.org/xml_xls_loader/xml_xls_loader)
+[![Code Climate](https://codeclimate.com/repos/xml_xls_loader/badges/xml_xls_loader/gpa.svg)](https://codeclimate.com/repos/xml_xls_loader/feed)
+[![Test Coverage](https://codeclimate.com/repos/xml_xls_loader/badges/xml_xls_loader/coverage.svg)](https://codeclimate.com/repos/xml_xls_loader/coverage)
 
 
 ## Usage
