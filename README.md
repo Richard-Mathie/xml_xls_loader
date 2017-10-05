@@ -1,4 +1,5 @@
-# Flask-Cache-Redis-Cluster
+# xml_xls_loader
+Python Module to load a MS xml xls into a pandas DataFrame
 [![PyPI version](https://img.shields.io/pypi/v/_.svg)](https://pypi.python.org/pypi/_)
 [![Travis CI](https://travis-ci.org/Richard-Mathie/_.svg?branch=master)](https://travis-ci.org/_/_)
 [![Code Climate](https://codeclimate.com/repos/_/badges/_/gpa.svg)](https://codeclimate.com/repos/_/feed)
@@ -8,23 +9,7 @@
 ## Usage
 
 ```python
-from flask import Flask
-from flask_caching import Cache
-app = Flask(__name__)
+from xml_xls_loader import xmlxls_to_pd
 
-
-class Config(object):
-
-    CACHE_TYPE = 'flask_cache_redis_cluster.rediscluster'
-    CACHE_REDIS_HOST = 'redis'
-    CACHE_REDIS_PORT = 6379
-    CACHE_KEY_PREFIX = '<your prefix>'
-    # ... other options
-
-
-app.config.from_object(Config)
-cache = Cache(app)
+dat = xmlxls_to_pd(attachment, header=3, skip_footer=4)
 ```
-
-## Links
-* []()
