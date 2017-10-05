@@ -18,7 +18,7 @@ requirements = [str(ir.req) for ir in requirements]
 __NAME__ = 'xml_xls_loader'
 __doc__ = readme
 __author__ = 'Richard-Mathie'
-__license__ = 'BSD'
+__license__ = 'GPLv3'
 
 setup(
     name=__NAME__,
@@ -29,7 +29,7 @@ setup(
     author=__author__,
     author_email='richard.mathie@cantab.net',
     url='/'.join(['https://github.com', __author__, __NAME__]),
-    packages=['xml_xls_loader'],
+    py_modules=['xml_xls_loader'],
     platforms='any',
     install_requires=requirements,
     test_suite='tests',

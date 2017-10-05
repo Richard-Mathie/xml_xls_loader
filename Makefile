@@ -1,4 +1,5 @@
 PATH := ./redis-git/src:${PATH}
+VERSION=$(shell cat Version)
 
 help:
 	@echo "Please use 'make <target>' where <target> is one of"
@@ -35,7 +36,7 @@ dist: cleanmeta
 	-python setup.py sdist bdist_wheel
 
 package: dist
-	-twine upload dist/xml_xls_loader-"$(cat Version)".tar.gz
+	-twine upload dist/xml_xls_loader-$(VERSION).tar.gz
 
 travis-run:
 	# Run tests

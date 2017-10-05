@@ -20,7 +20,7 @@ script:
 
 after_success:
     - coveralls
-    - CODECLIMATE_REPO_TOKEN='' codeclimate-test-reporter
+    - CODECLIMATE_REPO_TOKEN='4c051872b55a8fc4559a81cfc187fdb845c82730024aafea8ce4d4a792c3d6bc' codeclimate-test-reporter
 deploy:
   provider: pypi
   user: RichardMathie
