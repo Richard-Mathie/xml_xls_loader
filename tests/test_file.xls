@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:html="http://www.w3.org/TR/REC-html40">
+	<Styles>
+		<Style ss:Name="Normal" ss:ID="1">
+			<Alignment ss:Vertical="Bottom"/>
+			<Borders/>
+			<Font ss:FontName="Verdana"/>
+			<Interior/>
+			<NumberFormat/>
+			<Protection/>
+		</Style>
+		<Style ss:ID="2">
+			<NumberFormat ss:Format="General Data"/>
+		</Style>
+		<Style ss:ID="3">
+			<NumberFormat ss:Format="[$-809]dd/m/yyyy"/>
+		</Style>
+		<Style ss:ID="4">
+			<NumberFormat ss:Format="[$-809]hh:mm:ss"/>
+		</Style>
+	</Styles>
+	<Worksheet ss:Name="Linkfeed">
+		<ss:Table>
+			<Row ss:AutoFitHeight="1">
+				<Cell ss:Index="1" ss:StyleID="1">
+					<Data ss:Type="String">Column A</Data>
+				</Cell>
+				<Cell ss:Index="2" ss:StyleID="1" ss:MergeAcross="1">
+					<Data ss:Type="String">Some Date</Data>
+				</Cell>
+				<Cell ss:Index="4" ss:StyleID="1" ss:MergeAcross="1">
+					<Data ss:Type="String">Description</Data>
+				</Cell>
+				<Cell ss:Index="6" ss:StyleID="1">
+					<Data ss:Type="String">Short Column</Data>
+				</Cell>
+				<Cell ss:Index="7" ss:StyleID="1" ss:MergeAcross="1">
+					<Data ss:Type="String">Multi Line Column</Data>
+				</Cell>
+			</Row>
+					<Row ss:AutoFitHeight="1">
+				<Cell ss:Index="1" ss:StyleID="1" ss:MergeDown="4">
+					<Data ss:Type="String">Coll A Data</Data>
+				</Cell>
+				<Cell ss:Index="2" ss:StyleID="3" ss:MergeDown="4">
+					<Data ss:Type="DateTime">2017-05-31T10:50:59.000</Data>
+				</Cell>
+				<Cell ss:Index="3" ss:StyleID="4" ss:MergeDown="4">
+					<Data ss:Type="DateTime">2017-05-31T10:50:59.000</Data>
+				</Cell>
+				<Cell ss:Index="4" ss:StyleID="1" ss:MergeAcross="1" ss:MergeDown="4">
+					<Data ss:Type="String">The quick brown fox jumps over the lazy dog</Data>
+				</Cell>
+				<Cell ss:Index="6" ss:StyleID="1" ss:MergeDown="4">
+					<Data ss:Type="String">qwertyuiop</Data>
+				</Cell>
+				<Cell ss:Index="7" ss:StyleID="1" ss:MergeAcross="1">
+					<Data ss:Type="String">Line 1</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="1">
+				<Cell ss:Index="7" ss:StyleID="1" ss:MergeAcross="1">
+					<Data ss:Type="String">Line 2</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="1">
+				<Cell ss:Index="7" ss:StyleID="1" ss:MergeAcross="1">
+					<Data ss:Type="String">Line 3</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="1">
+				<Cell ss:Index="7" ss:StyleID="1" ss:MergeAcross="1">
+					<Data ss:Type="String">Line 4</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="1">
+				<Cell ss:Index="7" ss:StyleID="1" ss:MergeAcross="1">
+					<Data ss:Type="String">Line 5</Data>
+				</Cell>
+			</Row>
+		</ss:Table>
+	</Worksheet>
+</Workbook>
