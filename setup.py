@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from pip.req import parse_requirements
+from io import open
+
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
 
-with open('Version', 'r') as f:
-    version = next(f).strip().decode('utf-8')
+with open('Version', 'r', encoding='utf-8') as f:
+    version = next(f).strip()
 
-with open('README.rst') as f:
+with open('README.rst', encoding='utf-8') as f:
     readme = f.read()
 
 requirements = parse_requirements('requirements.txt', session=False)
